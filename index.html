@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo" id="logo">Awesome Books</h2>
+            <ul class="navs">
+                <li class="list-btn" id="list-btn">List</li>
+                <li class="add-book-btn" id="add-book-btn">Add Book</li>
+                <li class="contacts-btn" id="contacts-btn">Contact</li>
+            </ul>
+        </nav>
+        <div id="time"></div>
+    </header>
+    <section class="list none" id="list">
+        <h1>All Awesome Books</h1>
+        <div class="book-list" id="book-list"></div>
+    </section>
+    <section class="add-books" id="add-books">
+        <form class="form" id="form">
+            <div class="inputs">
+                <h2>Add A New Book</h2>
+                <input class="title" id="title" name="title" placeholder="Kindly Type Title" required />
+                <input class="author" id="author" name="author" placeholder="Kindly Type Author" required />
+            </div>
+            <div class="add-btn-div">
+                <button class="add-btn" id="add-btn" type="submit">Add</button>
+            </div>
+        </form>
+    </section>
+    <section class="contacts none" id="contacts">
+        <h2 class="hit">Contact Information</h2>
+        <p>Do have any Question or you want to say "Hello"?<br />
+            You can reach out to us!</p>
+            <ul>
+                <li>Our e-mail: awesomebooksstore@gmail.com</li>
+                <li>Our Phone Number: +260957787054</li>
+                <li>Our Address: PO BOX 670-187</li>
+            </ul>
+    </section>
+    <footer class="footer">
+        <p>Copyright Ice-berg 2022</p>
+    </footer>
+    <script type="module" src="./index.js"></script>
+    <script src="https://moment.github.io/luxon/global/luxon.js"></script>
+</body>
+</html>
