@@ -17,14 +17,14 @@
                 <li class="contacts-btn" id="contacts-btn">Contact</li>
             </ul>
         </nav>
-        <div class="time"></div>
+        <div id="time"></div>
     </header>
     <section class="list none" id="list">
         <h1>All Awesome Books</h1>
         <div class="book-list" id="book-list"></div>
     </section>
     <section class="add-books" id="add-books">
-        <form class="form">
+        <form class="form" id="form">
             <div class="inputs">
                 <h2>Add A New Book</h2>
                 <input class="title" id="title" name="title" placeholder="Kindly Type Title" required />
@@ -36,7 +36,7 @@
         </form>
     </section>
     <section class="contacts none" id="contacts">
-        <h2>Contact Information</h2>
+        <h2 class="hit">Contact Information</h2>
         <p>Do have any Question or you want to say "Hello"?<br />
             You can reach out to us!</p>
             <ul>
@@ -49,5 +49,6 @@
         <p>Copyright Ice-berg 2022</p>
     </footer>
     <script type="module" src="./index.js"></script>
+    <script src="https://moment.github.io/luxon/global/luxon.js"></script>
 </body>
 </html>
