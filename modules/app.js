@@ -109,18 +109,16 @@ const addAndRemoveBook = () => {
   const localS = new LocalStorage();
   const ui = new CreateUI();
 
-  function getVal(title, author, id) {
-    return new AwesomeBooks(title, author, id);
-  }
+  const getVal = (title, author, id) => new AwesomeBooks(title, author, id);
 
   // important to hold length of local  storage
   let id = 0;
 
-  function getIndexInLocalStorage() {
+  const getIndexInLocalStorage = () => {
     const books = localS.getLocalStorage();
     // eslint-disable-next-line no-undef
     return books.length;
-  }
+  };
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
